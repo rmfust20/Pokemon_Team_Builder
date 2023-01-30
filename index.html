@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon Team Builder</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class = "left_margin">
+    </div>
+
+    <div class="icon_one">
+      <img id = 'one' src="https://storage.needpix.com/rsynced_images/question-38629_1280.png" width="150" height=170>
+    </div>
+    <div class="icon_two">
+      <img id = 'two' src="https://storage.needpix.com/rsynced_images/question-38629_1280.png" width="150" height=170>
+    </div>
+    <div class="icon_three">
+      <img id = 'three' src="https://storage.needpix.com/rsynced_images/question-38629_1280.png" width="150" height=170>
+    </div>
+    <div class="icon_four">
+      <img id = 'four' src="https://storage.needpix.com/rsynced_images/question-38629_1280.png" width="150" height=170>
+    </div>
+    <div class="icon_five">
+      <img id = 'five' src="https://storage.needpix.com/rsynced_images/question-38629_1280.png" width="150" height=170>
+    </div>
+    <div class="icon_six">
+      <img id = 'six' src="https://storage.needpix.com/rsynced_images/question-38629_1280.png" width="150" height=170>
+    </div>
+    <div class = "div_position_one">
+      <div class="dropdown">
+    <button onclick="display_pokemon_list('myDropdown')" class="dropbtn">Add Pokemon</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction('myInput','myDropdown')">
+    </div>
+  </div>
+</div>
+
+  <div class = "div_position_two">
+    <div class="dropdown">
+  <button onclick="display_pokemon_list('myDropdown_two')" class="dropbtn">Add Pokemon</button>
+  <div id="myDropdown_two" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput_two" onkeyup="filterFunction('myInput_two','myDropdown_two')">
+  </div>
+  </div>
+  </div>
+
+  <div class = "div_position_three">
+    <div class="dropdown">
+  <button onclick="display_pokemon_list('myDropdown_three')" class="dropbtn">Add Pokemon</button>
+  <div id="myDropdown_three" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput_three" onkeyup="filterFunction('myInput_three','myDropdown_three')">
+  </div>
+  </div>
+  </div>
+
+  <div class = "div_position_four">
+    <div class="dropdown">
+  <button onclick="display_pokemon_list('myDropdown_four')" class="dropbtn">Add Pokemon</button>
+  <div id="myDropdown_four" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput_four" onkeyup="filterFunction('myInput_four','myDropdown_four')">
+  </div>
+  </div>
+  </div>
+
+  <div class = "div_position_five">
+    <div class="dropdown">
+  <button onclick="display_pokemon_list('myDropdown_five')" class="dropbtn">Add Pokemon</button>
+  <div id="myDropdown_five" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput_five" onkeyup="filterFunction('myInput_five','myDropdown_five')">
+  </div>
+  </div>
+  </div>
+
+  <div class = "div_position_six">
+    <div class="dropdown">
+  <button onclick="display_pokemon_list('myDropdown_six')" class="dropbtn">Add Pokemon</button>
+  <div id="myDropdown_six" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput_six" onkeyup="filterFunction('myInput_six','myDropdown_six')">
+  </div>
+  </div>
+  </div>
+
+  
+
+  <div class = "suggestion_position_one">
+    <button class = "dropbtn_s" id = "mySuggestion_one"> Suggest Pokemon</button>
+  </div>
+
+  <div class = "suggestion_position_two">
+    <button class = "dropbtn_s" id = "mySuggestion_two" > Suggest Pokemon</button>
+  </div>
+
+  <div class = "suggestion_position_three">
+    <button class = "dropbtn_s" id = "mySuggestion_three" > Suggest Pokemon</button>
+  </div>
+
+  <div class = "suggestion_position_four">
+    <button class = "dropbtn_s" id = "mySuggestion_four"  > Suggest Pokemon</button>
+  </div>
+
+  <div class = "suggestion_position_five">
+    <button class = "dropbtn_s" id = "mySuggestion_five"  > Suggest Pokemon</button>
+  </div>
+
+  <div class = "suggestion_position_six">
+    <button class = "dropbtn_s" id = "mySuggestion_six" > Suggest Pokemon</button>
+  </div>
+
+
+    <img id = 'bug' src="https://static.wikia.nocookie.net/pokemongo/images/7/7d/Bug.png/revision/latest?cb=20161013132753" width="50" height=50>
+    <img id = 'dark' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Pok%C3%A9mon_Dark_Type_Icon.svg/768px-Pok%C3%A9mon_Dark_Type_Icon.svg.png?20200511085509" width="50" height=50>
+    <img id = 'dragon' src="https://tiermaker.com/images/templates/6015261602528351.png" width="50" height=50>
+    <img id = 'electric' src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Pok%C3%A9mon_Electric_Type_Icon.svg/768px-Pok%C3%A9mon_Electric_Type_Icon.svg.png?20200511085231" width="50" height=50>
+    <img id = 'fairy' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg/768px-Pok%C3%A9mon_Fairy_Type_Icon.svg.png?20200511094221" width="50" height=50>
+    <img id = 'fighting' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Pok%C3%A9mon_Fighting_Type_Icon.svg/768px-Pok%C3%A9mon_Fighting_Type_Icon.svg.png?20200511092020" width="50" height=50>
+    <img id = 'fire' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dffvl1m-a992d76d-bfa4-41cd-bff6-7546b47f2184.png/v1/fill/w_894,h_894,strp/fire_type_symbol_galar_by_jormxdos_dffvl1m-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGZmdmwxbS1hOTkyZDc2ZC1iZmE0LTQxY2QtYmZmNi03NTQ2YjQ3ZjIxODQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.DBmvPsi4hX6q3f8XHGcinkRbtbV2zsh5nB-_s9wse_4" width="50" height=50>
+    <img id = 'flying' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsSmCXRRJ1Zi0kdV6kU8U970FJKBBqwDwfIcg1O0Ya9TX8Apj6uoAHPpdjl9-xlZnQXg&usqp=CAU" width="50" height=50>
+    <img id = 'ghost' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dffvl2d-818164a9-f8e6-41fc-ba4e-c725e2be0d66.png/v1/fill/w_894,h_894,strp/ghost_type_symbol_galar_by_jormxdos_dffvl2d-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGZmdmwyZC04MTgxNjRhOS1mOGU2LTQxZmMtYmE0ZS1jNzI1ZTJiZTBkNjYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.YKEzh2shCheghxM31oOkuEOOrQlMeW1axtKAyK-Iceg" width="50" height=50>
+    <img id = 'grass' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dffvl0s-d443a3b4-fa4e-47a6-99b4-d2a769785614.png/v1/fill/w_1280,h_1280,strp/grass_type_symbol_galar_by_jormxdos_dffvl0s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGZmdmwwcy1kNDQzYTNiNC1mYTRlLTQ3YTYtOTliNC1kMmE3Njk3ODU2MTQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6-S1a0_YYhlP6eXW5QqrJk4jtv6b5a3MRuugxqhJ6EA" width="50" height=50>
+    <img id = 'ground' src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Pok%C3%A9mon_Ground_Type_Icon.svg/768px-Pok%C3%A9mon_Ground_Type_Icon.svg.png?20200511091001" width="50" height=50>
+    <img id = 'ice' src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Pok%C3%A9mon_Ice_Type_Icon.svg/768px-Pok%C3%A9mon_Ice_Type_Icon.svg.png?20200511090905" width="50" height=50>
+    <img id = 'normal' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dffvl62-5a7d2cd1-0e54-4a3f-870d-bce6d157a84f.png/v1/fill/w_894,h_894,strp/normal_type_symbol_galar_by_jormxdos_dffvl62-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGZmdmw2Mi01YTdkMmNkMS0wZTU0LTRhM2YtODcwZC1iY2U2ZDE1N2E4NGYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6WIqtbC5CGYGzevXOzcj0_mP0hLVcWBD3hHs95hhCZw" width="50" height=50>
+    <img id = 'poison' src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/768px-Pok%C3%A9mon_Poison_Type_Icon.svg.png?20200511082025" width="50" height=50>
+    <img id = 'psychic' src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Pok%C3%A9mon_Psychic_Type_Icon.svg/768px-Pok%C3%A9mon_Psychic_Type_Icon.svg.png?20200511092630" width="50" height=50>
+    <img id = 'rock' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Pok%C3%A9mon_Rock_Type_Icon.svg/768px-Pok%C3%A9mon_Rock_Type_Icon.svg.png?20200511083843" width="50" height=50>
+    <img id = 'steel' src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Pok%C3%A9mon_Steel_Type_Icon.svg/768px-Pok%C3%A9mon_Steel_Type_Icon.svg.png?20200511081737" width="50" height=50>
+    <img id = 'water' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Pok%C3%A9mon_Water_Type_Icon.svg/768px-Pok%C3%A9mon_Water_Type_Icon.svg.png?20200511081703" width="50" height=50>
+
+
+
+
+    <img id = 'bug_2' src="https://static.wikia.nocookie.net/pokemongo/images/7/7d/Bug.png/revision/latest?cb=20161013132753" width="50" height=50>
+    <img id = 'dark_2' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Pok%C3%A9mon_Dark_Type_Icon.svg/768px-Pok%C3%A9mon_Dark_Type_Icon.svg.png?20200511085509" width="50" height=50>
+    <img id = 'dragon_2' src="https://tiermaker.com/images/templates/6015261602528351.png" width="50" height=50>
+    <img id = 'electric_2' src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Pok%C3%A9mon_Electric_Type_Icon.svg/768px-Pok%C3%A9mon_Electric_Type_Icon.svg.png?20200511085231" width="50" height=50>
+    <img id = 'fairy_2' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg/768px-Pok%C3%A9mon_Fairy_Type_Icon.svg.png?20200511094221" width="50" height=50>
+    <img id = 'fighting_2' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Pok%C3%A9mon_Fighting_Type_Icon.svg/768px-Pok%C3%A9mon_Fighting_Type_Icon.svg.png?20200511092020" width="50" height=50>
+    <img id = 'fire_2' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dffvl1m-a992d76d-bfa4-41cd-bff6-7546b47f2184.png/v1/fill/w_894,h_894,strp/fire_type_symbol_galar_by_jormxdos_dffvl1m-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGZmdmwxbS1hOTkyZDc2ZC1iZmE0LTQxY2QtYmZmNi03NTQ2YjQ3ZjIxODQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.DBmvPsi4hX6q3f8XHGcinkRbtbV2zsh5nB-_s9wse_4" width="50" height=50>
+    <img id = 'flying_2' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsSmCXRRJ1Zi0kdV6kU8U970FJKBBqwDwfIcg1O0Ya9TX8Apj6uoAHPpdjl9-xlZnQXg&usqp=CAU" width="50" height=50>
+    <img id = 'ghost_2' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dffvl2d-818164a9-f8e6-41fc-ba4e-c725e2be0d66.png/v1/fill/w_894,h_894,strp/ghost_type_symbol_galar_by_jormxdos_dffvl2d-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGZmdmwyZC04MTgxNjRhOS1mOGU2LTQxZmMtYmE0ZS1jNzI1ZTJiZTBkNjYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.YKEzh2shCheghxM31oOkuEOOrQlMeW1axtKAyK-Iceg" width="50" height=50>
+    <img id = 'grass_2' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dffvl0s-d443a3b4-fa4e-47a6-99b4-d2a769785614.png/v1/fill/w_1280,h_1280,strp/grass_type_symbol_galar_by_jormxdos_dffvl0s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGZmdmwwcy1kNDQzYTNiNC1mYTRlLTQ3YTYtOTliNC1kMmE3Njk3ODU2MTQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6-S1a0_YYhlP6eXW5QqrJk4jtv6b5a3MRuugxqhJ6EA" width="50" height=50>
+    <img id = 'ground_2' src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Pok%C3%A9mon_Ground_Type_Icon.svg/768px-Pok%C3%A9mon_Ground_Type_Icon.svg.png?20200511091001" width="50" height=50>
+    <img id = 'ice_2' src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Pok%C3%A9mon_Ice_Type_Icon.svg/768px-Pok%C3%A9mon_Ice_Type_Icon.svg.png?20200511090905" width="50" height=50>
+    <img id = 'normal_2' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dffvl62-5a7d2cd1-0e54-4a3f-870d-bce6d157a84f.png/v1/fill/w_894,h_894,strp/normal_type_symbol_galar_by_jormxdos_dffvl62-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGZmdmw2Mi01YTdkMmNkMS0wZTU0LTRhM2YtODcwZC1iY2U2ZDE1N2E4NGYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6WIqtbC5CGYGzevXOzcj0_mP0hLVcWBD3hHs95hhCZw" width="50" height=50>
+    <img id = 'poison_2' src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/768px-Pok%C3%A9mon_Poison_Type_Icon.svg.png?20200511082025" width="50" height=50>
+    <img id = 'psychic_2' src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Pok%C3%A9mon_Psychic_Type_Icon.svg/768px-Pok%C3%A9mon_Psychic_Type_Icon.svg.png?20200511092630" width="50" height=50>
+    <img id = 'rock_2' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Pok%C3%A9mon_Rock_Type_Icon.svg/768px-Pok%C3%A9mon_Rock_Type_Icon.svg.png?20200511083843" width="50" height=50>
+    <img id = 'steel_2' src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Pok%C3%A9mon_Steel_Type_Icon.svg/768px-Pok%C3%A9mon_Steel_Type_Icon.svg.png?20200511081737" width="50" height=50>
+    <img id = 'water_2' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Pok%C3%A9mon_Water_Type_Icon.svg/768px-Pok%C3%A9mon_Water_Type_Icon.svg.png?20200511081703" width="50" height=50>
+
+    <div id = 'weak'>
+    <p> Weaknesses </p>
+  </div>
+
+    <div id = 'res'>
+    <p> Resistances </p>
+  </div>
+
+
+<ul id = myListone>
+</ul>
+<ul id = myListtwo>
+</ul>
+<ul id = myListthree>
+</ul>
+<ul id = myListfour>
+</ul>
+<ul id = myListfive>
+</ul>
+<ul id = myListsix>
+</ul>
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+	<script src="logic.js">
+  </script>
+  </body>
+</html>

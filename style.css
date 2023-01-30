@@ -1,0 +1,494 @@
+.body {
+  border-right-style: solid;
+  border-left-style: solid;
+  border-left-color: black;
+}
+
+
+.icon_one {
+  position: absolute;
+  top: 150px;
+  left: 125px;
+}
+
+.icon_two {
+  position: absolute;
+  top: 150px;
+  left: 340px;
+}
+
+.icon_three {
+  position: absolute;
+  top : 150px;
+  left: 555px;
+  mix-blend-mode: multiply;
+}
+
+.icon_four {
+  position: absolute;
+  top: 150px;
+  left: 770px;
+}
+
+.icon_five {
+  position: absolute;
+  top: 150px;
+  left: 985px;
+}
+
+.icon_six {
+  position: absolute;
+  top: 150px;
+  left: 1200px;
+}
+
+
+
+#myListone {
+  position: absolute;
+  top: 320px;
+  left: 125px;
+}
+
+#myListtwo {
+  position: absolute;
+  top: 320px;
+  left: 340px;
+}
+
+#myListthree {
+  position: absolute;
+  top: 320px;
+  left: 555px;
+}
+
+#myListfour {
+  position: absolute;
+  top: 320px;
+  left: 770px;
+}
+
+#myListfive {
+  position: absolute;
+  top: 320px;
+  left: 985px;
+}
+
+#myListsix {
+  position: absolute;
+  top: 320px;
+  left: 1200px;
+}
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn_s {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  font-size: 15.1px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#weak {
+  position: absolute;
+  top: 555px;
+  left: 150px;
+}
+
+#bug {
+  position: absolute;
+  top: 555px;
+  left: 325px;
+  opacity: .25;
+}
+
+#dark {
+  position: absolute;
+  top: 555px;
+  left: 375px;
+  opacity: .25;
+}
+
+#dragon {
+  position: absolute;
+  top: 555px;
+  left: 425px;
+  opacity: .25;
+}
+
+#electric {
+  position: absolute;
+  top: 555px;
+  left: 475px;
+  opacity: .25;
+}
+
+#fairy {
+  position: absolute;
+  top: 555px;
+  left: 525px;
+  opacity: .25;
+}
+
+#fighting {
+  position: absolute;
+  top: 555px;
+  left: 575px;
+  opacity: .25;
+}
+
+#fire {
+  position: absolute;
+  top: 555px;
+  left: 625px;
+  opacity: .25;
+}
+
+#flying {
+  position: absolute;
+  top: 555px;
+  left: 675px;
+  opacity: .25;
+}
+
+#ghost {
+  position: absolute;
+  top: 555px;
+  left: 725px;
+  opacity: .25;
+}
+
+#grass {
+  position: absolute;
+  top: 555px;
+  left: 775px;
+  opacity: .25;
+}
+
+#ground {
+  position: absolute;
+  top: 555px;
+  left: 825px;
+  opacity: .25;
+}
+
+#ice {
+  position: absolute;
+  top: 555px;
+  left: 875px;
+  opacity: .25;
+}
+
+#normal {
+  position: absolute;
+  top: 555px;
+  left: 925px;
+  opacity: .25;
+}
+
+#poison {
+  position: absolute;
+  top: 555px;
+  left: 975px;
+  opacity: .25;
+}
+
+#psychic {
+  position: absolute;
+  top: 555px;
+  left: 1025px;
+  opacity: .25;
+}
+
+#rock {
+  position: absolute;
+  top: 555px;
+  left: 1075px;
+  opacity: .25;
+}
+
+#steel {
+  position: absolute;
+  top: 555px;
+  left: 1125px;
+  opacity: .25;
+}
+
+#water {
+  position: absolute;
+  top: 555px;
+  left: 1175px;
+  opacity: .25;
+}
+
+#res {
+  position: absolute;
+  top: 615px;
+  left: 150px;
+}
+
+
+#bug_2 {
+  position: absolute;
+  top: 615px;
+  left: 325px;
+  opacity: .25;
+}
+
+#dark_2 {
+  position: absolute;
+  top: 615px;
+  left: 375px;
+  opacity: .25;
+}
+
+#dragon_2 {
+  position: absolute;
+  top: 615px;
+  left: 425px;
+  opacity: .25;
+}
+
+#electric_2 {
+  position: absolute;
+  top: 615px;
+  left: 475px;
+  opacity: .25;
+}
+
+#fairy_2 {
+  position: absolute;
+  top: 615px;
+  left: 525px;
+  opacity: .25;
+}
+
+#fighting_2 {
+  position: absolute;
+  top: 615px;
+  left: 575px;
+  opacity: .25;
+}
+
+#fire_2 {
+  position: absolute;
+  top: 615px;
+  left: 625px;
+  opacity: .25;
+}
+
+#flying_2 {
+  position: absolute;
+  top: 615px;
+  left: 675px;
+  opacity: .25;
+}
+
+#ghost_2 {
+  position: absolute;
+  top: 615px;
+  left: 725px;
+  opacity: .25;
+}
+
+#grass_2 {
+  position: absolute;
+  top: 615px;
+  left: 775px;
+  opacity: .25;
+}
+
+#ground_2 {
+  position: absolute;
+  top: 615px;
+  left: 825px;
+  opacity: .25;
+}
+
+#ice_2 {
+  position: absolute;
+  top: 615px;
+  left: 875px;
+  opacity: .25;
+}
+
+#normal_2 {
+  position: absolute;
+  top: 615px;
+  left: 925px;
+  opacity: .25;
+}
+
+#poison_2 {
+  position: absolute;
+  top: 615px;
+  left: 975px;
+  opacity: .25;
+}
+
+#psychic_2 {
+  position: absolute;
+  top: 615px;
+  left: 1025px;
+  opacity: .25;
+}
+
+#rock_2 {
+  position: absolute;
+  top: 615px;
+  left: 1075px;
+  opacity: .25;
+}
+
+#steel_2 {
+  position: absolute;
+  top: 615px;
+  left: 1125px;
+  opacity: .25;
+}
+
+#water_2 {
+  position: absolute;
+  top: 615px;
+  left: 1175px;
+  opacity: .25;
+}
+
+
+
+
+/* The search field */
+#myInput, #myInput_two, #myInput_three, #myInput_four, #myInput_five, #myInput_six {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {outline: 3px solid #ddd;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.div_position_one {
+  position: absolute;
+  top:85px;
+  left:125px;
+}
+
+.div_position_two {
+  position: absolute;
+  top:85px;
+  left:340px;
+}
+
+.div_position_three {
+  position: absolute;
+  top:85px;
+  left:555px;
+}
+
+.div_position_four {
+  position: absolute;
+  top:85px;
+  left:770px;
+}
+
+.div_position_five {
+  position: absolute;
+  top:85px;
+  left:985px;
+}
+
+.div_position_six {
+  position: absolute;
+  top:85px;
+  left:1200px;
+}
+
+.suggestion_position_one {
+  position : absolute;
+  top: 20px;
+  left : 125px;
+}
+
+.suggestion_position_two {
+  position : absolute;
+  top: 20px;
+  left : 340px;
+}
+
+.suggestion_position_three {
+  position : absolute;
+  top: 20px;
+  left : 555px;
+}
+
+.suggestion_position_four {
+  position : absolute;
+  top: 20px;
+  left : 770px;
+}
+
+.suggestion_position_five {
+  position : absolute;
+  top: 20px;
+  left : 985px;
+}
+
+.suggestion_position_six {
+  position : absolute;
+  top: 20px;
+  left : 1200px;
+}
